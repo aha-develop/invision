@@ -1,5 +1,5 @@
 import React from "react";
-import { EmbeddedContentAttribute } from "@aha-app/aha-develop-react";
+import { EmbeddedContentAttribute } from "@aha-develop/aha-develop-react";
 
 aha.on("inVisionAttribute", ({ record, fields }, { identifier }) => {
   return (
@@ -9,7 +9,6 @@ aha.on("inVisionAttribute", ({ record, fields }, { identifier }) => {
       fields={fields}
       product="InVision"
       placeholder="https://projects.invisionapp.com/embed/..."
-      aspectRatio={1}
     />
   );
 });
