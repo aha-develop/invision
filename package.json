@@ -1,7 +1,7 @@
 {
-  "name": "aha-develop.invision",
+  "name": "@aha-develop/invision",
   "description": "InVision integration",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "support@aha.io",
   "repository": {
     "type": "git",
