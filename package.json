@@ -1,0 +1,43 @@
+{
+  "name": "aha-develop.invision",
+  "description": "InVision integration",
+  "version": "0.0.0",
+  "author": "support@aha.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aha-develop/invision"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^16.8.0"
+  },
+  "ahaExtension": {
+    "cspSources": [
+      "https://invis.io/",
+      "https://projects.invisionapp.com",
+      "https://s3.invisionapp-cdn.com"
+    ],
+    "contributes": {
+      "views": {
+        "inVisionAttribute": {
+          "title": "InVision",
+          "entryPoint": "src/views/attribute.js",
+          "host": "attribute",
+          "recordTypes": [
+            "Feature",
+            "Requirement",
+            "Epic"
+          ]
+        },
+        "inVisionPanel": {
+          "title": "InVision",
+          "entryPoint": "src/views/panel.js",
+          "host": "panel"
+        }
+      }
+    }
+  },
+  "dependencies": {
+    "@aha-develop/aha-develop-react": "^1.2.1"
+  }
+}
